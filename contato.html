@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Deliceria</title>
+        <style>
+            
+            .navegador {
+                font-family: Arial;
+                display: inline;
+                text-align: center;
+                font-weight: bold; 
+                font-style: italic;
+                font-size: 28px;    
+                margin-left: 200px;
+            }   
+
+            .formulario {
+                font-family: Arial;   
+            }
+
+            footer {
+                font-family: Arial;
+                text-align: center;
+                padding: 50px 0;
+                font-weight: bold; 
+                font-size: 13px;
+            }
+
+        </style>
+    </head>
+  
+    <body style="background-color: #D2D7C1">
+
+        <header style="padding: 20px 0">
+
+            <section>
+
+                <h1><img style="margin-left: 16cm;" src="logo.png" alt="Logotipo da Deliciaria"></h1>
+
+                <nav>
+
+                    <ul>
+                        <li class="navegador"><a href="index.html">Home</a></li>
+                        <li class="navegador"><a href="produtos.html">Produtos</a></li>
+                        <li class="navegador"><a href="sobre.html">Sobre</a></li>
+                        <li class="navegador"><a href="contato.html">Contato</a></li>
+                    </ul>
+ 
+                </nav>
+
+            </section>
+
+            <section class="formulario">
+
+                <form action="mailto:deliceria@gmail.com" method="post" id="fContato"
+                oninput="resulto.value=parseInt(valor1.value)+parseInt(valor2.value)+parseInt(valor3.value)">
+                
+                    <fieldset>
+                    
+                        <legend>Identificação</legend>
+                    
+                        <label for="cNome">Nome:</label><br>
+                    
+                        <input type="text" size=50 name="tNome" id="cNome" required="required" />
+                    
+                        <br>
+                    
+                        <p>Você mora:</p>
+                    
+                        <input type="radio" name="moradia" id="cen" value="Centro">
+                        <label for="cen">Centro</label><br>
+                    
+                        <input type="radio" name="moradia" id="bai" value="Bairro">
+                        <label for="bai">Bairro</label>
+                    
+                    </fieldset>
+                    
+                    <br><br>
+                    
+                    <fieldset>
+                        <legend>Informações de Pagamento</legend>
+
+                        <p>Quais meios de pagamento você utiliza?</p>
+                        
+                        <input type="checkbox" name="meiopag" id="credito" value="credito">
+                        <label for="credito">Crédito</label><br>
+                    
+                        <input type="checkbox" name="meiopag" id="debito" value="debito">
+                        <label for="debito">Débito</label><br>
+                    
+                        <input type="checkbox" name="meiopag" id="boleto" value="boleto">
+                        <label for="boleto">Boleto</label><br>
+                    
+                        <input type="checkbox" name="meiopag" id="pix" value="pix">
+                        <label for="pix">Pix</label>
+                        
+                        <br><br>
+                        
+                        <label for="time">Meio de Pagamento Preferido:</label><br>
+                        
+                        <select name="meioprefe" id="meiopreferido">
+                    
+                            <option value="credito">Crédito</option>
+                            <option value="debito">Débito</option>
+                            <option value="boleto">Boleto</option>
+                            <option value="pix">Pix</option>
+                    
+                        </select>
+                        
+                        <br><br>
+                    
+                    </fieldset>
+
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Distância da sua residência até a Deliceria (em Km)</legend>
+                        0
+                        <input type="range" name="valor1" id="valor1">
+                        30 +
+                    </fieldset>
+
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Sua opinião:</legend>
+                        <textarea name="message" rows="10" cols="90" placeholder="Deixe aqui a sua mensagem!"></textarea>
+                    </fieldset>
+                    
+                    <br><br>
+                    
+                    <input type="submit" value="Enviar">
+                  
+                </form>
+                       
+            </section>
+        
+        </header>
+
+        <footer>
+            <blockquote cite="http://www.deliceria.com.br">
+                <p>Há 20 anos, trazendo delícias para a sua vida.</p>
+            </blockquote>
+
+            <p>&copy; Copyright Deliceria Bolos, Doces e Salgados - 2021</p>
+
+        </footer>
+
+    </body>
+    
+</html>

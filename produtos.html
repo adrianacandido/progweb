@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Deliceria</title>
+        <style>
+            
+            li {
+                font-family: Arial;
+                display: inline;
+                text-align: center;
+                font-weight: bold; 
+                font-style: italic;
+                font-size: 28px;    
+                margin-left: 200px;
+            }   
+            
+            .produtos {
+                width: 940px;
+                margin: 0 auto;
+                padding: 50px 0;
+            }
+            
+            .produtos li {
+                display:inline-block; 
+                text-align: center;
+                width: 20%;
+                vertical-align: top;
+                margin: 0 1.5%;
+                padding: 20px 30px;
+            }
+            
+            .produto-descricao {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .produto-preco {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            footer {
+                font-family: Arial;
+                text-align: center;
+                padding: 50px 0;
+                font-weight: bold; 
+                font-size: 13px;
+            }
+
+        </style>
+    </head>
+  
+  
+    <body style="background-color: #D2D7C1">
+
+        <header style="padding: 20px 0">
+
+            <section>
+
+                <h1><img style="margin-left: 16cm;" src="logo.png" alt="Logotipo da Deliciaria"></h1>
+
+                <nav>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    
+
+                </nav>
+
+            </section>
+            
+        </header>
+
+        <article>
+
+            <ul class="produtos">
+
+                <li>
+
+                    <h2 >Tortas</h2> 
+
+                    <img width="80%" src="torta.jpg" alt="Foto de uma torta de chocolate">
+                    
+                    <p class="produto-descricao">Tortas deliciosas feitas com amor</p>
+                    <p class="produto-preco">R$ 95,00 o kilo</p>
+
+                </li>
+
+                <li>
+                    
+                    <h2>Doces</h2>
+                    
+                    <img width="60%" src="doces.jpg" alt="Foto de docinhos">
+                    
+                    <p class="produto-descricao">Doces finos</p>
+                    <p class="produto-preco">R$ 5,50 a unidade</p>
+                
+                </li>            
+
+                <li>
+                
+                    <h2>Salgadinhos</h2>
+                
+                    <img width="80%" src="salgados.jpg" alt="Foto de salgadinhos">
+                
+                    <p class="produto-descricao">Salgadinhos diferenciados</p>
+                    <p class="produto-preco">R$ 5,00 a unidade</p>
+                
+                </li>            
+
+            </ul>
+
+        </article>
+
+        <article>
+
+            <table style="font-family: Arial;", align="center", border=5px>
+                
+                <thead>
+
+                    <tr>
+                        <th>Produto</th>
+                        <th>Desconto</th>
+                    </tr>
+
+                </thead>
+                
+                <tbody>
+
+                    <tr>
+                
+                        <td>Tortas</td>
+                        <td>5% à vista</td>
+                    
+                    </tr>
+                
+                    <tr>
+                        
+                        <td>Docinhos</td>
+                        <td>2% à vista</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td>Salgadinhos</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp</td>
+                    </tr>
+                
+                </tbody>
+            
+            </table>
+
+        </article>
+
+        <footer>
+            <blockquote cite="http://www.deliceria.com.br">
+                <p>Há 20 anos, trazendo delícias para a sua vida.</p>
+            </blockquote>
+    
+            <p>&copy; Copyright Deliceria Bolos, Doces e Salgados - 2021</p>
+        </footer>
+    </body>
+</html>
